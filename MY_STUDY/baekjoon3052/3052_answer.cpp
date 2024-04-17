@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int arr[42] = {};
+    int arr[42] = {};                   //배열을 42개의 요소로 선언함
     int n, t;
     t = 0;
     for (int i = 0; i < 10; i++)
@@ -19,7 +19,3 @@ int main()
 
     return 0;
 }
-
-/*
-
-*/
