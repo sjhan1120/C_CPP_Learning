@@ -1,0 +1,10 @@
+[문자열 추가 및 삽입 방법]
+    1. +연산자
+        string str1 = "abc"
+        str1 += "def"
+    2. append
+        string str1 = "abc"
+        string str2 = str1.append("def");
+    3. insert
+        string str1 = "abc"
+        string str2 = str1.insert(2, "def") // 2번 인덱스에 문자열 삽입
