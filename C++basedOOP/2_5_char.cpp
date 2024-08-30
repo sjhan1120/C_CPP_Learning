@@ -8,7 +8,7 @@ int main()
     char strData3[] = "김근식교수님";                                       //배열 크기를 직접 지정하지 않아도 알아서 지정됨.
 
     cout<< "메모리 크기= " << sizeof(strData1) <<", "<<strData1<< endl;
-    //cout<< "메모리 크기= " << strData1.length() <<", "<<strData1<< endl;  //string class 사용불가: 사용하려면 변수가 string 형식이어야 함.
+    //cout<< "메모리 크기= " << strData1.length() <<", "<<strData1<< endl;  //char형은 사용불가: 사용하려면 변수가 string 형식이어야 함.
     cout<< "메모리 크기= " << sizeof(strData2) <<", "<<strData2<< endl;     
     cout<< "메모리 크기= " << sizeof(strData3) <<", "<<strData3<< endl;     //UTF-8을 사용하고 있고 한글이므로 메모리 크기는  (글자수 x 3) + 1 byte 임.
                                                                            //EUC-KR(Visual studio) 인코딩에서는             (글자수 x 2) + 1 byte 임.

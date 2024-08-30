@@ -4,7 +4,7 @@ using namespace std;
 class CEVCar
 {
 friend int main();      //(1)class CEVCar 외부중에서 int main() 함수와 CHEVCar class가 접근이 가능하도록 friend 선언
-friend class CHEVCar;   //(1)
+friend class CHEVCar;  
 
 private:
     int m_nWidth=10;

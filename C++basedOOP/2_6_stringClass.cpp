@@ -12,7 +12,8 @@ int main()
     
         //size() 와 length()는 동일한 명령어. NULL문자를 제외한 실제 메모리에 저장된 글자의 수를 반환함.
         //sizeof()는 메모리의 크기를 반환. size(), length()는 NULL을 제외한 글자의 수를 반환.
-        //sizeof()를 string 문자열에 적용하면 char 문자열에서 적용했을 때와 다르게 나옴. 왜 그런거지...?
+        //sizeof()를 string 문자열에 적용하면 char 문자열에서 적용했을 때와 다르게 나옴. 32가 나옴 왜 그런거지...?
+        //string타입은 기본적으로 32바이트를 할당받아서 그런듯 하다. size()와 length()는 그 32바이트 안에서도 Null값들이 아닌 실제 문자의 수만 반환해주는듯하다.
         //UTF-8을 사용하고 있고 한글이므로 메모리 크기는  글자수 x 3 byte 임.
         //EUC-KR(Visual studio) 인코딩에서는             글자수 x 2 byte 임.
 
@@ -21,7 +22,6 @@ int main()
     cout << "메모리 크기= " << strData1.size() << ", " << strData1 << endl;
 
     cout << "1, 3번 위치 문자= " << strData1.at(1) << ", " << strData1[3] << endl;  //at(n1): n1 위치의 문자를 가리킴, 변수명[n1]과 동일
-                                                                                   //string은 인덱스 0부터 시작이 아닌 1부터 시작인듯...?
 
 
     return 0;

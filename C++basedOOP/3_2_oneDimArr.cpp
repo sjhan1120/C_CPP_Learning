@@ -17,7 +17,7 @@ int main()
     for (i = 0; i < SIZE; i++)
     {
         if (nData[i] % 2)   nOddSum += nData[i];    //홀수를 더하기
-        else nEvenSum += nData[i];
+        else nEvenSum += nData[i];                  //짝수를 더하기
     }
     cout << "짝수 더하기 = " << nEvenSum << endl;
     cout << "홀수 더하기 = " << nOddSum << endl;

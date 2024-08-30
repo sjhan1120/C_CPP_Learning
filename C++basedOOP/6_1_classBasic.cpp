@@ -12,7 +12,7 @@ public:         //(3) 1개의 멤버함수를 public으로 선언, 외부 main()
     void Dimension(const char *strName, int x, int y)   //(4) 멤버함수 실행부분 코딩
     {
         m_pCarName=strName;     //(5) 멤버함수를 통해 차종과 제원을 전달받아 private로 선언한 멤버변수에 접근이 가능하도록 정보은닉하는 과정.
-                                //    private로 선언한 멤버함수 m_pCarName은 main()함수에서 직접적으로 접근할 수 없음.
+                                //    private로 선언한 멤버변수 m_pCarName은 main()함수에서 직접적으로 접근할 수 없음.
                                 //    접근하려면 public으로 선언한 멤버함수를 경유하여야 한다.
                                 //    m_pCarName을 public 접근제어지시자로 바꾸면 여타 함수에서도 접근 가능하므로 정보의 은닉 불가능.
         m_nWidth=x;     m_nLength=y;
