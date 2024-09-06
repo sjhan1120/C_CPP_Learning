@@ -1,0 +1,23 @@
+[가상함수(virtual function)]
+    -가상함수 팁
+        부모 또는 자식 class에서 부모 class 멤버함수 또는 자식 class의 오버라이딩 멤버함수를 선택적으로 사용하고자 할 때 사용.
+        부모 class 멤버함수명에 가상함수 (키워드 virtual) 선언
+        예) virtual void Func(int arg)  //부모 class
+            void Func(int arg) // 자식 class에 추가로 선언하여 사용
+        
+        부모class 멤버함수 적용 방법:
+            부모 class로 객체 참조자 선언 = 부모 class 객체;    또는
+            부모 class 포인터 객체 신규 생성 = 부모 class 객체 주소 복사;
+        
+        자식 class 멤버함수 적용 방법:
+            부모 class로 객체 참조자 선언 = 자식 class 객체;    또는
+            부모 class 포인터 객체 신규 생성 = 자식 class 객체 주소 복사;
+        
+        참조자로 선언하지 않아도 되지만, 참조가 아닌 별도 객체를 생성하면 생성된 class 객체가 메모리를 별도로
+        할당받으므로 메모리 관리에 효율적이지 못하여 참조자를 선언하여 사용할 것을 권장함.
+        예) 자식 class 멤버함수 사용
+            CChild K1;
+            CParent& K2=K1;
+            k2.멤버변수
+    
+    ex. 8_1_virFuncRef.cpp 참고바람...
